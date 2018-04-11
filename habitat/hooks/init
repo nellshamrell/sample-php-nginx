@@ -1,0 +1,3 @@
+cp -n {{pkgPathFor "core/php"}}/etc/php-fpm.conf.default {{pkgPathFor "core/php"}}/etc/php-fpm.conf
+# Rename fpm.d default file
+cp -n {{pkgPathFor "core/php"}}/etc/php-fpm.d/www.conf.default {{pkgPathFor "core/php"}}/etc/php-fpm.d/www.conf
