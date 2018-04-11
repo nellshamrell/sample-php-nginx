@@ -1,4 +1,4 @@
-pkg_name=sample-php-nginx
+pkg_name=sample-php-nginx-app
 pkg_origin=core
 pkg_version="0.1.0"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
