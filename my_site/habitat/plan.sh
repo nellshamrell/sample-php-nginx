@@ -1,4 +1,4 @@
-pkg_name=sample-php-nginx-app
+pkg_name=my_site
 pkg_origin=core
 pkg_version="0.1.0"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
@@ -9,6 +9,10 @@ pkg_deps=(core/php/7.1.4/20180411221100)
 
 pkg_svc_user=root
 pkg_svc_group=$pkg_svc_user
+
+pkg_exports=(
+    [port]="app.port"
+)
 
 do_build() {
     return 0

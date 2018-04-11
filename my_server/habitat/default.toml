@@ -1,0 +1,18 @@
+# Use this file to templatize your application's native configuration files.
+# See the docs at https://www.habitat.sh/docs/create-packages-configure/.
+# You can safely delete this file if you don't need it.
+
+[nginx]
+  worker_processes = 4
+
+  [nginx.events]
+    worker_connections = 1024
+
+  [nginx.http]
+    keepalive_timeout = 60
+    sendfile = "on"
+    tcp_nodelay = "on"
+    tcp_nopush = "on"
+
+  [nginx.http.listen]
+    port = 80
