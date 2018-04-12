@@ -19,5 +19,5 @@ do_build() {
 }
 
 do_install() {
-    return 0
+    cp "/src/my_site/index.php" "${pkg_prefix}/dist"
 }
